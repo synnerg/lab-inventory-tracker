@@ -1,0 +1,4 @@
+timestamp,item_id,amount_used,unit,by,reason
+2025-08-13T10:00:00,C001,30,pcs,Arjun,DNA extraction
+2025-08-13T10:30:00,C002,50,pcs,Arjun,Daily use
+2025-08-13T11:00:00,C003,1,bottles,Arjun,Surface cleaning
