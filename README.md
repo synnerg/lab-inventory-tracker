@@ -1,18 +1,29 @@
-# 🧪 Lab Inventory Tracker
+# 🧪 Lab Inventory Tracker (SQLite + Python)
 
-This is a command-line tool for tracking lab inventory, applying usage logs, and generating restock lists. Built in Python using `pandas`.
+This is a command-line inventory tracker I built to manage lab stock efficiently. It uses a local SQLite database (`inventory.db`) and lets you:
+
+- Track and view current lab items
+- Apply usage logs (e.g., experiment consumption)
+- Auto-generate a restock list
+- Keep everything clean with `pandas` + `tabulate`
+
+No web UI — just clean, readable CLI and local data handling.
+
+---
 
 ## 🔧 Features
 
-- View current lab inventory as a clean table
-- Apply usage logs from CSV (e.g., experiment consumption)
-- Automatically generate `restock_list.csv` when stock is low
-- Simple CLI using `argparse`
-- Clean, readable pandas-powered CSV logic
+- 📦 View lab inventory in a grid-style table
+- 📉 Apply usage logs to update quantities
+- 📋 Generate `restock_list.csv` for items below threshold
+- 🧠 Simple, no-nonsense CLI (`argparse`)
+- 🗂️ Local storage using SQLite (no server needed)
 
-## 🛠️ How to Use
+---
+
+## ⚙️ Setup
+
+1. Install dependencies:
 
 ```bash
-python inventory_tracker.py status
-python inventory_tracker.py apply-usage
-python inventory_tracker.py restock
+pip install pandas tabulate

@@ -1,5 +1,7 @@
 import argparse, sqlite3, pandas as pd
 from pathlib import Path
+from tabulate import tabulate
+
 DB_PATH = Path("inventory.db")
 
 # ---------- helpers ----------
@@ -10,7 +12,7 @@ def show_status():
     with db() as conn:
         df = pd.read_sql("SELECT * FROM Inventory", conn)
     print("\nCurrent lab inventory:\n")
-    print(df.to_markdown(index=False))
+    print(tabulate(df, headers="keys", tablefmt="grid", showindex=False))
 
 def apply_usage():
     with db() as conn:

@@ -1,6 +1,6 @@
 item_id,item_name,category,quantity,unit,reorder_threshold,location,notes
 C001,Centrifuge Tubes 15ml,consumable,120,pcs,50,Shelf A3,15 mL conical
 C002,Gloves Nitrile M,consumable,200,pcs,100,Supply Closet,Blue
-C003,Ethanol 70 percent,reagent,3,bottles,2,Chem Cabinet,500 mL
+C003,Ethanol 70 percent,reagent,3,bottles,2,Chem Cabinet,500 ml
 E001,Micropipette P200,equipment,4,units,2,Bench 2,Calibrated May 2025
 E002,Mini-centrifuge,equipment,1,units,1,Bench 4,Needs service
